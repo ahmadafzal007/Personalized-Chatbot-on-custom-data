@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-h4 {
+    @apply text-3xl font-bold
+  }
+  .text-h3 {
+    @apply text-2xl font-semibold leading-none tracking-tight
+  }
+}
+
+.ScrollbarStyling ::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.ScrollbarStyling ::-webkit-scrollbar-track {
+  @apply bg-transparent rounded-md;
+}
+
+.ScrollbarStyling ::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-md;
+}
