@@ -1,1 +1,1 @@
-# Pursonalized Chatbot on Custom data
+# Personalized Chatbot on Custom data
